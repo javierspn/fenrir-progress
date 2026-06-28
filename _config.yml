@@ -1,0 +1,14 @@
+title: Fenrir — progress log
+description: >-
+  A cheap, compounding, self-improving loop for verifiable domains.
+  Public, measured progress — screenshots, cohort numbers, learning curves.
+url: https://javierspn.github.io
+baseurl: /fenrir-progress
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+# served by GitHub Pages native Jekyll — no Gemfile needed
+exclude:
+  - README.md

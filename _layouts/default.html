@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="wolf">🐺</div>
+    <h1>Fenrir — progress log</h1>
+    <p class="tag">A cheap, compounding, self-improving loop for <em>verifiable</em> domains.
+       The deliverable is the measurement — so here it is, in the open.</p>
+    <div class="badges">
+      <a href="https://github.com/javierspn/fenrir-agent"><img alt="code" src="https://img.shields.io/badge/code-fenrir--agent-181717?style=for-the-badge&logo=github"></a>
+      <a href="https://ko-fi.com/javierspn"><img alt="ko-fi" src="https://img.shields.io/badge/support-ko--fi-f0883e?style=for-the-badge&logo=kofi&logoColor=white"></a>
+      <img alt="pilot" src="https://img.shields.io/badge/pilot-mathematics-5ac8a8?style=for-the-badge">
+    </div>
+    <nav class="nav">
+      <a href="{{ '/' | relative_url }}">Latest</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#log">Log</a>
+      <a href="https://github.com/javierspn/fenrir-agent">Code</a>
+      <a href="https://ko-fi.com/javierspn">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer>
+    <div>🐺 Fenrir / Project Ragnarok ·
+      <a href="https://github.com/javierspn/fenrir-agent">source</a> ·
+      <a href="https://ko-fi.com/javierspn">support compute</a></div>
+    <div>Apache-2.0 · honest negative results included by design.</div>
+    <a class="totop" href="#top">↑ back to top</a>
+  </footer>
+</body>
+</html>

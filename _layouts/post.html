@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+  <p class="date">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <h2 style="margin-top:6px">{{ page.title }}</h2>
+  {{ content }}
+  <p style="margin-top:30px"><a href="{{ '/' | relative_url }}">← all entries</a></p>
+</article>
